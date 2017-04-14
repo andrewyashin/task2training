@@ -24,11 +24,6 @@
     </build>
 
     <dependencies>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit-all</artifactId>
-            <version>4.12</version>
-        </dependency>
 
         <dependency>
             <groupId>org.hamcrest</groupId>
