@@ -6,9 +6,6 @@ import ua.training.view.View;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-/**
- * Created by andrew_yashin on 4/13/17.
- */
 public class Controller {
     private Model model;
     private View view;

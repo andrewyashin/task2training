@@ -2,13 +2,10 @@ package ua.training.model;
 
 import java.util.Random;
 
-/**
- * Created by andrew_yashin on 4/13/17.
- */
 public class Model {
     public static final int RAND_MIN = 0;
     public static final int RAND_MAX = 100;
-    private static Random rand;
+    private static final Random rand;
 
     static {
         rand = new Random();
@@ -36,9 +33,6 @@ public class Model {
         return endNumber;
     }
 
-    public int getUserNumber() {
-        return userNumber;
-    }
 
     public void setStartNumber(int startNumber) {
         this.startNumber = startNumber;
@@ -47,4 +41,8 @@ public class Model {
     public void setEndNumber(int endNumber) {
         this.endNumber = endNumber;
     }
+
+//    public int getUserNumber() {
+//        return userNumber;
+//    }
 }

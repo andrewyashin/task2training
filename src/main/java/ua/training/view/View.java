@@ -1,8 +1,5 @@
 package ua.training.view;
 
-/**
- * Created by andrew_yashin on 4/13/17.
- */
 public class View {
     public static final String INPUT_NUMBER = " Input number = ";
     public static final String INPUT_MIN = " - Input min number = ";

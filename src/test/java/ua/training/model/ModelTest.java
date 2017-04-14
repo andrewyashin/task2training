@@ -1,5 +1,6 @@
 package ua.training.model;
 
+import org.junit.Assume;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -12,7 +13,7 @@ public class ModelTest {
     private Model model;
 
     @Before
-    public void setModel(){
+    public void initModel(){
         model = new Model();
     }
 
@@ -37,4 +38,6 @@ public class ModelTest {
         model.setStartNumber(10);
         assertEquals(10, model.getStartNumber());
     }
+
+
 }
