@@ -6,6 +6,9 @@ import ua.training.view.View;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+/**
+ * Created by andrew_yashin on 4/13/17.
+ */
 public class Controller {
     private Model model;
     private View view;
@@ -49,17 +52,15 @@ public class Controller {
 
             if (inputNumber < randNumber) {
                 view.println(View.SEARCHING_NUMBER_GREATER);
-                if (inputNumber > model.getStartNumber())
-                    model.setStartNumber(inputNumber);
+                model.checkNumberForStart(inputNumber);
 
             } else if (inputNumber > randNumber){
                 view.println(View.SEARCHING_NUMBER_LOWER);
-                if (inputNumber < model.getEndNumber())
-                    model.setEndNumber(inputNumber);
+                model.checkNumberForEnd(inputNumber);
             }
         }
 
-        view.println(View.SEARCHING_NUMBER_IS + inputNumber);
+        view.printResult(inputNumber);
     }
 
 

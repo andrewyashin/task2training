@@ -20,6 +20,24 @@ public class Model {
         endNumber = RAND_MAX;
     }
 
+    public boolean checkNumberForStart(int number) {
+        if (number > startNumber) {
+            startNumber = number;
+            return true;
+        }
+
+        return false;
+    }
+
+    public boolean checkNumberForEnd(int number){
+        if (number < endNumber) {
+            endNumber = number;
+            return true;
+        }
+
+        return false;
+    }
+
     public int generateUserNumber(){
         userNumber = startNumber + rand.nextInt(endNumber - startNumber);
         return userNumber;

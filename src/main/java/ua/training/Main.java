@@ -11,7 +11,7 @@ public class Main {
         View view = new View();
 
         Controller controller = new Controller(model, view);
-        controller.processNumber();
-        //controller.processNumber(25, 62);
+        //controller.processNumber();
+        controller.processNumber(25, 62);
     }
 }

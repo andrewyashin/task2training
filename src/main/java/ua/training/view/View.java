@@ -25,4 +25,8 @@ public class View {
                 + ".." + max
                 + " ]");
     }
+
+    public void printResult(int number){
+        System.out.println(SEARCHING_NUMBER_IS + number);
+    }
 }
